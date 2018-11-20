@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".first">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+     <RadioButton
+         android:textColor="#00FF23"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Tree"
+         android:id="@+id/Tree"/>
+            <RadioButton
+                android:textColor="#0000FF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plant  "
+                android:id="@+id/Plant"/>
+            <RadioButton
+                android:textColor="#FF0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flower "
+                android:id="@+id/Flower"/>
+        </RadioGroup>
+        <CheckBox
+            android:textColor="#888888"
+            android:text="Switcher"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/EditText"/>
+    </LinearLayout>
+    
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:src="@mipmap/ic_launcher"
+    android:onClick="changeBck"
+    />
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="match_parent"
+     android:text="описание картинки слева"
+     android:id="@+id/text1"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="About Info"
+            android:id="@+id/button1"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imButton1"
+            android:src="@drawable/ic_launcher_background"/>
+    </LinearLayout>
+
+</LinearLayout>
