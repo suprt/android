@@ -1,0 +1,32 @@
+package myitschool.com.first;
+public class Plant {
+    String name;
+    double height;
+    Plant (){}
+    Plant(String name){
+        this.name = name;}
+    Plant(String name,double height){
+        this(name);
+        this.height = height;    }
+    String printPlant(){
+        return "name: "+name+"\theight: "+height;
+    }
+}
+class Tree extends Plant{
+    String leaf;
+    int age;
+    boolean benifit;// плоды дерева
+    Tree(){};
+    Tree(String name, double height, String leaf,int age,boolean benifit){
+        super(name, height);
+        this.leaf = leaf; this.age = age; this.benifit = benifit;    }
+    Tree(double height, boolean benifit){
+        this.height = height;
+        this.benifit = benifit;    }
+    String dataTree(){
+        return "name: "+name+"\nheight:"+height;    }
+        @Override
+        String printPlant(){
+        return "name:"+name+"\nheight:"+height+"\nleaf:"+leaf+"\nage:"+age+"\nbenifit:"+benifit;
+        }
+}
