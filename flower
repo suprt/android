@@ -1,0 +1,19 @@
+package myitschool.com.first;
+
+public class Flower extends Plant{
+    int count_flowers;
+    boolean one_year;
+    String season;
+    public Flower(String name, double height, int count_flowers, boolean one_year, String season) {
+        super(name, height);
+        this.count_flowers = count_flowers;
+        this.one_year = one_year;
+        this.season = season;
+    }
+    boolean many_flowers(Flower f){
+        return this.count_flowers>f.count_flowers;}
+    @Override
+    String printPlant(){
+        return "name:"+name+"\nheight:"+height+"\none_year:"+one_year+"\nseason:"+season+"\ncount_flowers :"+count_flowers;
+    }
+}
